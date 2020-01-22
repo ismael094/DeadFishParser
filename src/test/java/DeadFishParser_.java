@@ -14,6 +14,6 @@ public class DeadFishParser_ {
     }
 
     private int[] parser(String commands) {
-        return new int[0];
+        return new int[commands.length()];
     }
 }
