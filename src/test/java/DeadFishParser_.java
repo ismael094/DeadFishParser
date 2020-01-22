@@ -24,8 +24,12 @@ public class DeadFishParser_ {
     }
 
     private int[] parser(String commands) {
-        if (commands.length() > 0 && commands.charAt(0) == 'i')
-            return new int[]{1};
-        return new int[commands.length()];
+        if (commands.length() == 0)
+            return new int[0];
+        int sum = 0;
+        for (int i = 0; i<commands.length();i++) {
+            if (commands.charAt(i) == 'i') sum++;
+        }
+        return new int[]{sum};
     }
 }
