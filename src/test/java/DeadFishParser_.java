@@ -26,10 +26,14 @@ public class DeadFishParser_ {
     private int[] parser(String commands) {
         if (commands.length() == 0)
             return new int[0];
+        return new int[]{calculateSum(commands)};
+    }
+
+    private int calculateSum(String commands) {
         int sum = 0;
         for (int i = 0; i<commands.length();i++) {
             if (commands.charAt(i) == 'i') sum++;
         }
-        return new int[]{sum};
+        return sum;
     }
 }
