@@ -44,6 +44,7 @@ public class DeadFishParser_ {
         for (int i = 0; i<commands.length();i++) {
             if (commands.charAt(i) == 'i') sum++;
             else if (commands.charAt(i) == 's') sum*=sum;
+            else if (commands.charAt(i) == 'd') sum--;
         }
         return sum;
     }
