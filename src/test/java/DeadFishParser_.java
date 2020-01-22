@@ -9,6 +9,6 @@ public class DeadFishParser_ {
     }
 
     private int[] parser(String commands) {
-        return null;
+        return new int[0];
     }
 }
