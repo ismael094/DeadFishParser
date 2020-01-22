@@ -28,6 +28,11 @@ public class DeadFishParser_ {
         assertThat(parser("iiiso")).isEqualTo(new int[]{9});
     }
 
+    @Test
+    public void should_return_two_with_iiido_command_string() {
+        assertThat(parser("iiido")).isEqualTo(new int[]{2});
+    }
+
     private int[] parser(String commands) {
         if (commands.length() == 0)
             return new int[0];
